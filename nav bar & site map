@@ -148,3 +148,71 @@ in the upper part of the body
     </nav>
 </section>
 
+
+
+
+SITE MAP
+ <section class="sitemap-section">
+        <main>
+            <h2>Site Map</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <p>Developed by: Ian Russel, Bautista; Aaron Kent, Celles; Lee Ryan, Leviste; Arvin Liel, Obayan; Shervin, Ricafranca </p>
+        </footer>
+    </section>
+
+
+.sitemap-section header, .sitemap-section footer {
+    background-color: #DDD0C8;
+    padding: 20px;
+    text-align: center;
+}
+
+.sitemap-section main {
+    background-color: #DDD0C8;
+    padding: 20px;
+}
+
+.sitemap-section footer {
+    background-color: #DDD0C8;
+    text-align: center;
+}
+.sitemap-section h2{
+    padding: 20px;
+    text-align: center;
+}
+/* Sitemap Styles */
+.sitemap-section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sitemap-section li {
+    margin-bottom: 10px;
+}
+
+.sitemap-section a {
+    text-decoration: none;
+    color: #323232;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.sitemap-section a:hover {
+    color: #007bff;
+}
+
+
+
+
