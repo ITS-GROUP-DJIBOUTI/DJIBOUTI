@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css">
+	<title>Form Reviews</title>
+</head>
+<body>
+	
+	<section class="navigation-section">
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars"></i>
+			</label>
+			<label class="logo"><a href="#">Alek's Clothing</a></label>
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+		</nav>
+	</section>
+
+
+
+
+		<div class="wrapper">
+			<h3>How was your experience</h3>
+			<form action="#">
+				<div class="rating">
+					<input type="number" name="rating" hidden>
+					<i  for="star" class='bx bx-star star' style="--i: 0;" ></i>
+					<i  for="star" class='bx bx-star star' style="--i: 1;" ></i>
+					<i  for="star" class='bx bx-star star' style="--i: 2;" ></i>
+					<i  for="star" class='bx bx-star star' style="--i: 3;" ></i>
+					<i  for="star" class='bx bx-star star' style="--i: 4;" ></i>
+				</div>
+				<textarea name="opinion" id="opinion" cols="30" rows="5" placeholder="Your response..."></textarea>
+				<div class="btn-group">
+					<button type="submit" class="btn submit">Submit</button>
+					<button class="btn cancel">Cancel</button>
+				</div>
+			</form>
+		</div>
+
+		<section class="testimonials">
+			<div class="testimonial-heading">
+				<span>Reviews</span>
+				<h1>Client Says</h1>
+			</div>
+
+			<div class="testimonial-box-container">
+
+				<!---comment 1-->
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug1.webp" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Ada Wong</strong>
+								<span>@adawong</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>The shirt is a perfect blend of style and comfort. The fabric feels soft against the skin, making it ideal for all-day wear. The classic design ensures versatility, making it a wardrobe staple.</p>
+					</div>
+				</div>
+
+				<!---comment 2-->
+
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug2.webp" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Claire Redfield</strong>
+								<span>@clairedfield</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>						
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>This shirt embodies the essence of minimalistic style. The clean lines and subtle details make it a standout piece without being too flashy. It's a great choice for those who appreciate simplicity with a touch of sophistication.</p>
+					</div>
+				</div>
+
+				<!---comment 3-->
+
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug3.jpg" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Rosemary Winters</strong>
+								<span>@rosewinters</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>The breathable fabric of this shirt makes it a top pick for warm weather. It keeps you cool and comfortable while exuding an elegant charm. Perfect for both casual and semi-formal occasions.</p>
+					</div>
+				</div>
+
+				<!---comment 4-->
+
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug4.avif" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Donna Beneviento</strong>
+								<span>@donna beneviento</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>I'm impressed by the durability of this shirt. After several washes, it still looks as good as new. The high-quality stitching and fabric make it a reliable choice for long-term use.</p>
+					</div>
+				</div>
+
+				<!---comment 5-->
+
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug5.jpg" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Chris Redfield</strong>
+								<span>@chrisredfield</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>This shirt is a true wardrobe essential. Its versatility allows it to seamlessly transition from a casual day out to a more formal setting. Pair it with jeans or dress it up with trousers  &ndash; it's a must-have piece.</p>
+					</div>
+				</div>
+
+				<!---comment 6-->
+
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug6.jpg" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Leon Kennedy</strong>
+								<span>@leon kennedy</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>The shirt effortlessly combines chic and trendy elements. The unique design details set it apart from ordinary shirts. It's a great way to add a touch of fashion-forward flair to your ensemble.</p>
+					</div>
+				</div>
+
+				<!---comment 7-->
+
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug7.jpg" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Ethan Winters</strong>
+								<span>@ethanwinters</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>The fit of this shirt is spot-on. It's tailored just right &ndash; not too tight, not too loose. The attention to detail in sizing ensures a flattering silhouette. Comfortable without compromising style.</p>
+					</div>
+				</div>
+				<!---comment 8-->
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug8.jpg" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Karl Heisenberg</strong>
+								<span>@karlheisenberg</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>I chose the vibrant color option, and it&#39;s a showstopper! The shirt adds a pop of color to my wardrobe and garners compliments wherever I go. The hue is true to the online images, and I love how it brightens up my look.</p>
+					</div>
+				</div>
+
+				<!---comment 9-->
+				<div class="testimonial-box">
+
+					<div class="box-top">
+						<div class="profile">
+							<div class="profile-img">
+								<img src="./img/mug9.webp" alt="">
+							</div>
+							<div class="name-user">
+								<strong>Alcina Dimitrescu</strong>
+								<span>@alcinadimetriscu</span>
+							</div>
+						</div>
+						<div class="reviews">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+					</div>
+
+					<div class="client-comment">
+						<p>What sets this shirt apart is its affordable price without compromising on quality. It feels and looks like a high-end piece, making it an excellent investment for anyone looking to upgrade their wardrobe on a budget.</p>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		
+
+	<!--SITE MAP-->
+	<section class="sitemap-section">
+        <main>
+            <h2>Site Map</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <p>Developed by: Ian Russel, Bautista; Aaron Kent, Celles; Lee Ryan, Leviste; Arvin Liel, Obayan; Shervin, Ricafranca </p>
+        </footer>
+    </section>
+
+
+	<script src="script.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+
+	
+
+
+</body>
+</html>
+
+
+======================================================INDEX.CSS===============================================
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dhurjati&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: roboto slab;
+}
+
+a{
+	text-decoration: none;
+}
+
+:root {
+	--yellow: #FFBD13;
+	--blue: #4383FF;
+	--blue-d-1: #3278FF;
+	--light: #F5F5F5;
+	--grey: #AAA;
+	--white: #FFF;
+	--shadow: 8px 8px 30px rgba(0,0,0,.05);
+}
+
+body {
+	padding: 0 !important;
+	margin: auto;
+
+}
+
+
+/*=================reviews==========================================*/
+.wrapper {
+	background: rgb(224, 217, 217);
+	padding: 2rem;
+	max-width: 576px;
+	width: 100%;
+	min-width: 300px;
+	border-radius: .75rem;
+	box-shadow: var(--shadow);
+	text-align: center;
+	margin: 10rem auto 5rem;
+
+}
+.wrapper h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	font-family: roboto slab;
+}
+
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: var(--yellow);
+	margin-bottom: 2rem;
+}
+
+.rating .star {
+	cursor: pointer;
+	transition: 0.4s ease;
+}
+
+.rating .hidden {
+	display: none;
+}
+
+.rating .star.active {
+	opacity: 1;
+	animation: animate .5s calc(var(--i) * 0.1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.rating .star:hover {
+	transform: scale(1.3);
+}
+
+textarea {
+	width: 100%;
+	background: var(--light);
+	padding: 1rem;
+	border-radius: .5 rem;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: .5 rem;
+}
+
+.btn-group {
+	display: flex;
+	grid-gap: .5rem;
+	align-items: center;
+}
+
+.btn-group .btn {
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+
+.btn-group .btn.submit {
+	background: var(--blue);
+	color: var(--white);
+}
+
+.btn-group .btn.submit:hover {
+	background: var(--blue-d-1);
+}
+
+.btn-group .btn.cancel {
+	background: var(--white);
+	color: var(--blue);
+}
+
+.btn-group .btn.cancel:hover {
+	background: var(--light);
+}
+
+
+
+/*=============customers review=====================*/
+
+#testimonials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.testimonial-heading {
+	letter-spacing: 3px;
+	margin: 30px 0;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonial-heading h1 {
+	font-size: 2.2rem;
+	font-family: roboto slab;
+	font-weight: 500;
+	background-color: #323232;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+.testimonial-heading span {
+	font-size: 1.3rem;
+	color: #252525;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.testimonial-box-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;	
+	width: 100%;
+}
+
+.testimonial-box {
+	width: 500px;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+	background: rgb(243, 233, 233);
+	padding: 20px;
+	margin: 15px;
+	cursor: pointer;
+	border-radius: 30px;
+}
+
+.profile-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.profile-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+}
+
+.name-user {
+	display: flex;
+	flex-direction: column;
+}
+
+.name-user strong {
+	color: #3d3d3d;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.name-user span {
+	color: #979797;
+	font-size: 0.8rem;
+}
+
+.reviews {
+	color: #f9d71c;
+}
+
+.box-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.client-comment {
+	font-size: 0.9rem;
+	color: #4b4b4b;
+}
+
+/*site map*/
+.sitemap-section header, .sitemap-section footer {
+    background-color: #DDD0C8;
+    padding: 20px;
+    text-align: center;
+}
+
+.sitemap-section main {
+    background-color: #DDD0C8;
+    padding: 20px;
+}
+
+.sitemap-section footer {
+    background-color: #DDD0C8;
+    text-align: center;
+}
+.sitemap-section h2{
+    padding: 20px;
+    text-align: center;
+}
+/* Sitemap Styles */
+.sitemap-section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sitemap-section li {
+    margin-bottom: 10px;
+}
+
+.sitemap-section a {
+    text-decoration: none;
+    color: #323232;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.sitemap-section a:hover {
+    color: #007bff;
+}
+
+
+
+
+
+========================================================= script.js ===========================================================
+This js is for the star 
+
+
+
+const allStar = document.querySelectorAll('.rating .star');
+const ratingValue = document.querySelector('.rating input');
+const testimonialsSection = document.querySelector('.testimonials');
+
+allStar.forEach((item, idx) => {
+    item.addEventListener('click', function () {
+        let click = 0;
+        ratingValue.value = idx + 1;
+        console.log(ratingValue.value);
+
+        allStar.forEach(i => {
+            i.classList.replace('bxs-star', 'bx-star');
+            i.classList.remove('active');
+        });
+
+        for (let i = 0; i < allStar.length; i++) {
+            if (i <= idx) {
+                allStar[i].classList.replace('bx-star', 'bxs-star');
+                allStar[i].classList.add('active');
+            } else {
+                allStar[i].style.setProperty('--i', click);
+                click++;
+            }
+        }
+    });
+});
+
+// Add an event listener to the navigation bar checkbox
+const navCheckbox = document.getElementById('check');
+navCheckbox.addEventListener('change', function () {
+    if (this.checked) {
+        testimonialsSection.classList.add('hide-stars');
+    } else {
+        testimonialsSection.classList.remove('hide-stars');
+    }
+});
