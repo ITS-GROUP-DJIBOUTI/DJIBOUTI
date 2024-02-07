@@ -377,8 +377,9 @@ body {
 
 
 /*=================reviews==========================================*/
+/*reviews*/
 .wrapper {
-	background: rgb(224, 217, 217);
+	background: rgb(241, 234, 234);
 	padding: 2rem;
 	max-width: 576px;
 	width: 100%;
@@ -414,6 +415,24 @@ body {
 .rating .hidden {
 	display: none;
 }
+
+/* Add this at the end of your CSS */
+.hide-stars .navigation-section .rating {
+    visibility: hidden;
+    height: 0;
+}
+
+.hide-stars .wrapper {
+    padding-top: 8rem;
+}
+
+.navigation-section #check:checked ~ .wrapper .rating {
+    visibility: hidden;
+    height: 0;
+}
+
+
+
 
 .rating .star.active {
 	opacity: 1;
@@ -488,7 +507,7 @@ textarea {
 
 
 
-/*=============customers review=====================*/
+/*===customer review=====*/
 
 #testimonials {
 	display: flex;
@@ -536,7 +555,7 @@ textarea {
 .testimonial-box {
 	width: 500px;
 	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-	background: rgb(243, 233, 233);
+	background: rgb(241, 234, 234);
 	padding: 20px;
 	margin: 15px;
 	cursor: pointer;
@@ -595,55 +614,15 @@ textarea {
 	color: #4b4b4b;
 }
 
-/*site map*/
-.sitemap-section header, .sitemap-section footer {
-    background-color: #DDD0C8;
-    padding: 20px;
-    text-align: center;
-}
 
-.sitemap-section main {
-    background-color: #DDD0C8;
-    padding: 20px;
-}
 
-.sitemap-section footer {
-    background-color: #DDD0C8;
-    text-align: center;
-}
-.sitemap-section h2{
-    padding: 20px;
-    text-align: center;
-}
-/* Sitemap Styles */
-.sitemap-section ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.sitemap-section li {
-    margin-bottom: 10px;
-}
-
-.sitemap-section a {
-    text-decoration: none;
-    color: #323232;
-    padding: 0 10px;
-    transition: color 0.3s ease;
-}
-
-.sitemap-section a:hover {
-    color: #007bff;
-}
 
 
 
 
 
 ========================================================= script.js ===========================================================
-This js is for the star 
+This JS is for the star. 
 
 
 
@@ -674,12 +653,18 @@ allStar.forEach((item, idx) => {
     });
 });
 
-// Add an event listener to the navigation bar checkbox
 const navCheckbox = document.getElementById('check');
 navCheckbox.addEventListener('change', function () {
+    const allStar = document.querySelectorAll('.rating .star');
+    const ratingValue = document.querySelector('.rating input');
+
     if (this.checked) {
-        testimonialsSection.classList.add('hide-stars');
-    } else {
-        testimonialsSection.classList.remove('hide-stars');
+        // Uncheck the stars
+        ratingValue.value = 0;
+
+        allStar.forEach(i => {
+            i.classList.replace('bxs-star', 'bx-star');
+            i.classList.remove('active');
+        });
     }
 });
